@@ -1,7 +1,7 @@
 <?PHP include ("seguridad.php");?>
 <!DOCTYPE html>
 <html lang="en">
-
+<link rel="icon" href="../IMG/logo.ico">
 <body>
 
 <section id="nave">
