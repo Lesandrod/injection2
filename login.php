@@ -22,7 +22,7 @@
    <br>
    <p>Usuario <input type="text" placeholder="ingrese su nombre" name="usuario"></p>
    <br>
-   <p>Contraseña <input type="password" placeholder="ingrese su contraseña" name="contra"></p>
+   <p>Contraseña <input type="text" placeholder="ingrese su contraseña" name="contra"></p>
    <br>
    <input type="submit" value="Ingresar">
    

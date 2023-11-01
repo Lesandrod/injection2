@@ -1,7 +1,6 @@
 <?php
 include_once '../db.php';
 
-/* Codigo para insertar datos*/
 if(isset($_POST['save']))
 {
     $usuario = $MySQLiconn->real_escape_string($_POST['usuario']);
@@ -20,7 +19,6 @@ if(isset($_POST['save']))
     }
 }
 
-/* Codigo para eliminar datos*/
 if(isset($_GET['del']))
 {
     $SQL = $MySQLiconn->prepare("CALL delete_user(?)");
@@ -29,8 +27,7 @@ if(isset($_GET['del']))
     $SQL->close();
     header("Location: listado.php");
 }
-/* Codigo para eliminar datos*/
-/* Codigo para actualizar datos*/
+
 if(isset($_GET['edit']))
 {
     
@@ -50,5 +47,5 @@ if(isset($_POST['update']))
     //$SQL = $MySQLiconn->query("UPDATE usuario SET usuario='".$_POST['usuario']."', contra='".$_POST['contra']."',id_cargo='".$_POST['id_cargo']."' WHERE id=".$_GET['edit']);
     header("Location: listado.php");
 }
-/* Codigo para actualizar datos*/
+
 ?>
